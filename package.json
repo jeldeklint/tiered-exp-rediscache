@@ -1,0 +1,31 @@
+{
+  "name": "tiered-exp-rediscache",
+  "version": "0.0.1",
+  "description": "gives exp-redis a lru layer",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeldeklint/tiered-exp-rediscache.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeldeklint/tiered-exp-rediscache/issues"
+  },
+  "homepage": "https://github.com/jeldeklint/tiered-exp-rediscache#readme",
+  "dependencies": {
+    "ioredis": "^5.7.0"
+  },
+  "devDependencies": {
+    "@bonniernews/eslint-config": "^2.0.2",
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2",
+    "mocha-cakes-2": "^3.3.0",
+    "exp-asynccache": "^3.2.0",
+    "exp-rediscache": "^5.1.0"
+  }
+}

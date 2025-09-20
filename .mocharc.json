@@ -1,0 +1,10 @@
+{
+  "require": [
+    "./test/setup.js"
+  ],
+  "ui": "mocha-cakes-2",
+  "reporter": "spec",
+  "recursive": true,
+  "timeout": 1000,
+  "exit": true
+}

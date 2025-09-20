@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  redis:
+    image: redis:7.2
+    container_name: tieredcache-redis
+    ports:
+      - "6379:6379"
+    command: >
+      redis-server
+      --notify-keyspace-events Exg
+      --appendonly no
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 1s
+      timeout: 3s
+      retries: 30
